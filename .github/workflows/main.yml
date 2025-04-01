@@ -38,7 +38,7 @@ jobs:
       run: sudo apt-get update
 
     - name: Install Dependencies
-      run: sudo apt-get install -y coreutils p7zip-full qemu-user-static git jq
+      run: sudo apt-get install -y coreutils p7zip-full qemu-user-static git jq python3-git
 
     - name: Checkout CustomPiOS
       uses: actions/checkout@v4
