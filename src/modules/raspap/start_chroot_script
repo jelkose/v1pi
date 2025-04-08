@@ -14,6 +14,10 @@ source /common.sh
 
 ### Script ####
 
+echo "--- Installing RaspAP dependencies"
+apt-get update -y && apt-get install -y curl dhcpcd5 iptables procps
+
+# Install RaspAP
 echo "--- RaspAP Install"
 curl -sL https://install.raspap.com | bash -s -- --yes
 
