@@ -8,7 +8,7 @@ set -x
 set -e
 
 export LC_ALL=C
-export TERMINFO=/usr/share/terminfo
+export TERM=dumb
 
 source /common.sh
 
