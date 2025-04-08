@@ -19,7 +19,7 @@ apt-get update -y && apt-get install -y curl dhcpcd5 iptables procps
 
 # Install RaspAP
 echo "--- RaspAP Install"
-curl -sL https://install.raspap.com | bash -s -- --yes
+curl -sL https://install.raspap.com | bash -s -- --yes --check 0
 
 sed -i 's@\(server.port\s*=\s*\)80@\17080@' /etc/lighttpd/lighttpd.conf
 sed -i "s@raspi-webgui@$RASPAP_HOTSPOT_NAME@" /etc/hostapd/hostapd.conf
